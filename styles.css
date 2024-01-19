@@ -1,0 +1,286 @@
+/* Shared Styling */
+body {
+    background-color: #1e1e1e;
+}
+.textHeader {
+    font-family: "Helvetica";
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+}
+.Section-Header {
+    width: 80%;
+    padding: 20px;
+    background-color: #262626;
+    margin: auto;
+
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+/* About Myself */
+#Self {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    flex: wrap;
+    margin: auto;
+    position: relative;
+}
+#Self #MyNameContainer {
+    background-color: #000000;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+#MyName {
+    font-family: "Helvetica";
+    font-size: 75px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+}
+#introduction-container {
+    width: fit-content;
+}
+#introduction-text {
+    font-family: "Helvetica";
+    font-size: 20px;
+    text-align: justify;
+}
+#Myself-Picture {
+    position: sticky;
+    left: 65%;
+}
+#MyPic {
+    border-radius: 35px;
+    border: 5px solid;
+}
+#ExternalLinks {
+    position: absolute;
+    bottom: 7%;
+    left: 2%;
+}
+.logos {
+    margin-top: 250px;
+    margin-right: 5px;
+}
+
+/* My Interests*/
+#Interests {
+    width: 80%;
+    padding: 20px;
+    background-color: #3e3e42;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+#Interests div {
+    width: 350px;
+    height: 400px;
+    background-color: #1e1e1e;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#Interests h1 {
+    color: #FFFFFF;
+    font-family: "Helvetica";
+    text-align: center;
+}
+.interest-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#interest-gaming {
+    animation: tilt-bounce 5000ms ease infinite;
+}
+#interest-anime {
+    animation: pulsing-a 2500ms ease infinite;
+}
+#interest-cooking {
+    animation: pulsing-b 3000ms ease infinite;
+}
+#interest-science {
+    animation: pulsing-b 3000ms ease infinite;
+}
+#interest-technology {
+    animation: pulsing-a 5000ms ease-in-out infinite;
+}
+/* Animations */
+@keyframes pulsing-a {
+    0% {
+        scale: 100%;
+    }
+    50% {
+        scale: 110%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+@keyframes pulsing-b {
+    0% {
+        scale: 100%;
+    }
+    20% {
+        scale: 95%;
+    }
+    40% {
+        scale: 105%;
+    }
+    60% {
+        scale: 95%;
+    }
+    80% {
+        scale: 105%;
+    }
+    100% {
+        scale: 100%;
+    }
+}
+@keyframes tilt-bounce {
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    60% {
+        transform:rotate(0deg);
+    }
+    70% {
+        transform:translateY(15px);
+    }
+    75% {
+        transform:translateY(0px);
+    }
+    80% {
+        transform:translateY(30px);
+    }
+    85% {
+        transform:translateY(0px);
+    }
+    90% {
+        transform:translateY(15px);
+    }
+    95% {
+        transform:translateY(0px);
+    }
+}
+
+/* Projects */
+#Projects {
+    width: 80%;
+    padding: 20px;
+    background-color: #3e3e42;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+#Projects div {
+    width: 650px;
+    height: 500px;
+    background-color: #1e1e1e;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+
+    align-items: center;
+}
+#Projects h2 {
+    font-family: "Helvetica";
+    color: #FFFFFF;
+}
+#Projects p {
+    font-family: "Helvetica";
+    color: #FFFFFF;
+}
+.Project-Images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* My Achievements*/
+#Achievements {
+    width: 80%;
+    padding: 20px;
+    background-color: #3e3e42;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+}
+#Achievements p {
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+#Achievements div {
+    width: 250px;
+    height: 250px;
+    margin: 18px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 35px;
+    border: 5px solid;
+    position: relative;
+    transition: height 0.25s, width 0.25s;
+}
+#Achievements .A:hover {
+    border-color: #ffd700;
+    width: 255px;
+    height: 255px;
+    background-color: #fffd8d;
+
+    transition-property: box-shadow, transform;
+    box-shadow: 0px 8px 10px 1px #ffd9006c;
+    transform: translateY(-9px);
+}
+#Achievements .B:hover {
+    border-color: #eeeeee;
+    width: 255px;
+    height: 255px;
+    background-color: #cccccc;
+
+    transition-property: box-shadow, transform;
+    box-shadow: 0px 8px 10px 1px #c0c0c0;
+    transform: translateY(-9px);
+}
+#Achievements .C:hover {
+    border-color: #0a82c7;
+    width: 255px;
+    height: 255px;
+    background-color: #97e7f5;
+    color: #FFFFFF;
+
+    transition-property: box-shadow, transform;
+    box-shadow: 0px 8px 10px 1px #0a82c750;
+    transform: translateY(-9px);
+}
+.achievementIcon {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    height: 75px;
+    width: 75px;
+}

@@ -2,59 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF8"/>
-  <meta name=viewport content="width-device-width", initial-scale=1.0"/>
+  <meta name=viewport content="width-device-width", initial-scale="1.0"/>
   <title>Paolo's Website</title>
-  <style></style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
   <!-- About myself -->
   <div id="Self">
-    <h1>Paolo Andrei A. Enerio</h1>
-    <a href="https://www.facebook.com/eneriopaolo">
-      <img class="facebook" src="Facebook_Logo.png" alt="Facebook Account" height="100" width="100">
-    </a>
-    <a href="https://github.com/eneriopaolo">
-      <img class="github" src="github-logo.png" alt="Github Account" height="100" width="100">
-    </a>
+    <div>
+      <div id="MyNameContainer">
+        <p id="MyName">Paolo Andrei A. Enerio</p>
+      </div>
+      <div id="introduction-container">
+        <p id="introduction-text">
+          Hello, I'm Paolo Enerio and welcome to my website. I am a BS Computer Science from Mapúa Malayan <br>
+          Colleges Laguna. My dream job is to become a game developer. I plan to create games that focuses on <br>
+          fun gameplay over maximizing profit. I also plan to contribute to some open-sources projects that <br>
+          enhances user's privacy in the future. I believe in our right to privacy, repair, and ownership. <br>
+          I plan to make a positive difference in our world via digital means after I graduate from college. <br>
+          You can learn more about me in this website. Happy browsing!
+        </p>
+      </div>
+      <div id="ExternalLinks">
+        <a href="https://www.facebook.com/eneriopaolo">
+          <img class="logos" src="Facebook_Logo.png" alt="Facebook Account" height="50" width="50">
+        </a>
+        <a href="https://github.com/eneriopaolo">
+          <img class="logos" src="github-logo.png" alt="Github Account" height="50" width="50">
+        </a>
+      </div>
+    </div>
+    <div id="Myself-Picture">
+      <img src="ENERIO0004.jpg" id="MyPic" alt="MyImage" height="566" width="377">
+    </div>
   </div>
 
-  <!-- Skills -->
-  <div id="Skills">
-    
-  </div>
   <!-- Interests -->
+  <div class="Section-Header">
+    <p class="textHeader">MY INTERESTS</p>
+  </div>
   <div id="Interests">
     <div>
-      
+      <h1>Gaming</h1>
+      <img class="interest-image" id ="interest-gaming"src="gaming.png" alt="gaming" height="190" width="305">
     </div>
     <div>
-      
+      <h1>Anime</h1>
+      <img class="interest-image" id ="interest-anime" src="anime.png" alt="anime" height="250" width="333">
     </div>
     <div>
-      
+      <h1>Cooking</h1>
+      <img class="interest-image" id ="interest-cooking" src="cooking.png" alt="cooking" height="206" width="362">
+    </div>
+    <div>
+      <h1>Science</h1>
+      <img class="interest-image" id ="interest-science" src="science.png" alt="science" height="250" width="250">
+    </div>
+    <div>
+      <h1>Technology</h1>
+      <img class="interest-image" id ="interest-technology" src="technology.png" alt="technology" height="233" width="333">
     </div>
   </div>
+
   <!-- Projects -->
+  <div class="Section-Header">
+    <p class="textHeader">PROJECTS</p>
+  </div>
+
   <div id="Projects">
     <div>
-      
+      <h2>Thesis: Kakaselpon Mo ‘Yan: Lived Experiences of MCL-SHS Students Who Are Sleep Deprived Due to Excessive Use of Facebook</h2>
+      <p>This is the thesis I made together with my groupmates Milthon Joseph Dayao and Jian Kashmir Milanes for our research subject in Senior Highschool.</p>
+      <img src="Sleeping.png" class="Project-Images" alt="MyThesis" height="304" width="333">
     </div>
     <div>
-      
+      <h2>Machine Problem: Space Frontier</h2>
+      <p>Space Frontier is a bullet hell game made with .NET Framework from C#. This is the game that me and my groupmates Patrick Borj Tuano, Joshua Hatulan, and Earl Ugalino developed for our IT111 subject.</p>
+      <img src="Space-Frontier.png" class="Project-Images" alt="Game" height="341" width="632">
     </div>
   </div>
   <!-- Achievements -->
-  <div id="Achievements">
-    <p>My Achievements</p>
-    <ul>
-      <li>Hosanna Christian Academy - Preschool: Valedictorian</li>
-      <li>Hosanna Christian Academy - Elementary: Valedictorian</li>
-      <li>Hosanna Technological School of Arts and Sciences - Junior Highschool: Valedictorian</li>
-      <li>Malayan Colleges Laguna - Senior Highschool: With Honors</li>
-      <li>Mapúa Malayan Colleges Laguna - 1st Year College: Dean's Lister</li>
-      <li>CAPRISA 2016 - Science Quiz Bee: 2nd Place</li>
-      <li>CAPRISA 2020 - Chess: Champion</li>
-    </ul>
+  <div class="Section-Header">
+    <p class="textHeader">MY ACHIEVEMENTS</p>
   </div>
+
+  <div id="Achievements">
+    <div class="A">
+      <p>Hosanna Christian Academy: Preschool <br> Valedictorian</p>
+      <img class="achievementIcon" src="Medal.png" alt="Award" height="50" width="50">
+    </div>
+
+    <div class="A">
+      <p>Hosanna Christian Academy: Elementary <br> Valedictorian</p>
+      <img class="achievementIcon" src="Medal.png" alt="Award" height="50" width="50">
+    </div>
+
+    <div class="A">
+      <p>Hosanna Technological School of Arts and Sciences: Junior Highschool <br> Valedictorian</p>
+      <img class="achievementIcon" src="Medal.png" alt="Award" height="50" width="50">
+    </div>
+
+    <div class="C">
+      <p>Malayan Colleges Laguna: Senior Highschool <br> With Honors</p>
+      <img class="achievementIcon" src="Medal.png" alt="Award" height="50" width="50">
+    </div>
+
+    <div class="C">
+      <p>Mapúa Malayan Colleges Laguna: 1st Year College <br> Dean's Lister</p>
+      <img class="achievementIcon" src="Medal.png" alt="Award">
+    </div>
+
+    <div class="B">
+      <p>CAPRISA 2016: Science Quiz Bee <br> 2nd Place</p>
+      <img class="achievementIcon" src="Medal.png" alt="Award">
+    </div>
+
+    <div class="A">
+      <img class="achievementIcon" src="Chess.png" alt="Award">
+      <p>CAPRISA 2020: Chess <br> Champion</p>
+    </div>
+
+    <div class="B">
+      <img class="achievementIcon" src="Chess.png" alt="Award">
+      <p>CCIS Week 2023: Chess <br> 1st Runner Up</p>
+    </div>
+  </div>
+ 
 </body>
