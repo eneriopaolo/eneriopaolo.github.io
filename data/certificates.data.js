@@ -35,4 +35,10 @@ export const certificates = [
     date: "July 20, 2026",
     image: "assets/certificates/Enerio_Wadhwani.svg"
   },
+  {
+    title: "Cybersecurity Awareness - Certificate of Attendance",
+    issuer: "Department of Information and Communications Technology",
+    date: "June 20, 2024",
+    image: "assets/certificates/Enerio_DICT-Cybersecurity-Awareness.svg"
+  },
 ];
