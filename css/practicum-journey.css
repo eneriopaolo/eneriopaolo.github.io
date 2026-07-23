@@ -1,0 +1,150 @@
+/* ==========================================================================
+   practicum-journey.css — the detailed Practicum slideshow
+   ========================================================================== */
+
+.practicum-journey-section {
+  padding: var(--space-16) 0 var(--space-24);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-8);
+  transition: color 0.15s ease;
+}
+
+.back-link:hover {
+  color: var(--color-accent-bright);
+}
+
+.back-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.slide-deck {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.slide-deck__viewport {
+  position: relative;
+  min-height: 480px;
+}
+
+.slide-deck__slide {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.slide-deck__slide.is-active {
+  display: grid;
+}
+
+.slide-deck__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 280px;
+  background: var(--color-bg-alt);
+}
+
+.slide-deck__content {
+  padding: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.slide-deck__eyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-accent-bright);
+}
+
+.slide-deck__title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  color: var(--color-text);
+}
+
+.slide-deck__paragraph {
+  color: var(--color-text-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.slide-deck__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.slide-deck__arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+
+.slide-deck__arrow:hover:not(:disabled) {
+  border-color: var(--color-accent);
+  color: var(--color-accent-bright);
+}
+
+.slide-deck__arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.slide-deck__arrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.slide-deck__dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.slide-deck__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  border: none;
+  padding: 0;
+}
+
+.slide-deck__dot[aria-current="true"] {
+  background: var(--color-accent);
+}
+
+.slide-deck__counter {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  color: var(--color-text-dim);
+  min-width: 3.5ch;
+}

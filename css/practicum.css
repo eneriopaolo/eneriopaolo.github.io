@@ -1,0 +1,56 @@
+/* ==========================================================================
+   practicum.css — Practicum summary page: a centered HTE logo, org
+   info, and a two-paragraph overview, linking out to the detailed
+   slideshow (practicum-timeline.html / practicum-timeline.css).
+   ========================================================================== */
+
+.practicum-summary-section {
+  padding: var(--space-24) 0;
+}
+
+.practicum-summary {
+  max-width: 70ch;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.practicum-summary__logo {
+  width: 225px;
+  height: 225px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-6);
+}
+
+.practicum-summary__company {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.practicum-summary__meta {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent-bright);
+  margin-bottom: var(--space-8);
+}
+
+.practicum-summary__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.practicum-summary__paragraph {
+  color: var(--color-text-muted);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  text-align: left;
+}

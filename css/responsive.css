@@ -1,0 +1,85 @@
+/* ==========================================================================
+   responsive.css — tablet and mobile breakpoints
+   ========================================================================== */
+
+/* ---- Tablet ---- */
+@media (max-width: 900px) {
+  .section {
+    padding: var(--space-16) 0;
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  .nav__tabs {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-alt);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-2);
+    transform: translateY(-8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  .nav__tabs.is-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav__tab {
+    border-radius: var(--radius-sm);
+    padding: var(--space-3) var(--space-4);
+    width: 100%;
+  }
+
+  .nav__toggle {
+    display: flex;
+  }
+
+  .hero__name {
+    font-size: 2rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .slide-deck__slide.is-active {
+    grid-template-columns: 1fr;
+  }
+
+  .slide-deck__image {
+    min-height: 200px;
+  }
+
+  .slide-deck__content {
+    padding: var(--space-8);
+  }
+
+  .slide-deck__nav {
+    gap: var(--space-4);
+  }
+}

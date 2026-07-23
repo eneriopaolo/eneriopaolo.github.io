@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAO - Practicum Summary</title>
+  <meta name="description" content="Paolo Andrei's practicum experience at The Medical City South Luzon." />
+  <link rel="icon type="image/x-icon" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/practicum.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <span class="nav__brand"><span class="accent">&lt;Paolo</span> Andrei/&gt;</span>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+      <div class="nav__tabs">
+        <a class="nav__tab" href="index.html">Home</a>
+        <a class="nav__tab" href="practicum.html" aria-current="page">Practicum</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section practicum-summary-section" aria-label="Practicum summary">
+      <div class="container">
+        <div class="practicum-summary" id="practicum-summary"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Paolo Andrei Enerio</p>
+  </footer>
+
+  <script type="module">
+    import { initNavigation } from "./js/navigation.js";
+    import { initPracticumSummary } from "./js/practicum.js";
+    import { initScrollReveal } from "./js/scroll-reveal.js";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      initNavigation();
+      initPracticumSummary();
+      initScrollReveal();
+      const yearEl = document.getElementById("year");
+      if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+    });
+  </script>
+</body>
+</html>
