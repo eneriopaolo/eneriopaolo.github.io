@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "ITAMS",
     description:
-      "Practicum Project: IT Asset Management System (ITAMS). A web-based application designed to modernize my Host Training Establishment's legacy '201' file for tracking IT Assets.",
+      "Practicum Project: IT Asset Management System (ITAMS). A web-based application designed to modernize and expand my Host Training Establishment's legacy '201' file for tracking IT Assets.",
     tech: [ "HTML", "CSS", "JavaScript", "Node.js", "Express", "TypeScript", "MySQL", "XAMPP"],
     image: "assets/projects/ITAMS.jpg",
     repoUrl: null,
