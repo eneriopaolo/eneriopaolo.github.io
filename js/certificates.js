@@ -169,11 +169,11 @@ function renderMarkup() {
       <div class="certs-slideshow__caption"></div>
       <div class="certs-slideshow__nav">
         <button data-action="prev" aria-label="Previous certificate">
-          <img src="assets/icons/chevron-left.svg" alt="" width="16" height="16" />
+          <img src="assets/icons/ui/chevron-left.svg" alt="" width="16" height="16" />
         </button>
         <div class="certs-slideshow__dots">${dots}</div>
         <button data-action="next" aria-label="Next certificate">
-          <img src="assets/icons/chevron-right.svg" alt="" width="16" height="16" />
+          <img src="assets/icons/ui/chevron-right.svg" alt="" width="16" height="16" />
         </button>
       </div>
     </div>
