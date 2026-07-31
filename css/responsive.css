@@ -7,6 +7,15 @@
   .section {
     padding: var(--space-16) 0;
   }
+
+  .hero__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero__blob-img {
+    max-width: 360px;
+  }
 }
 
 /* ---- Mobile ---- */
@@ -49,6 +58,19 @@
 
   .hero__name {
     font-size: 2rem;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero__visual {
+    order: -1;
+  }
+
+  .hero__blob-img {
+    max-width: 260px;
   }
 
   .hero__actions {

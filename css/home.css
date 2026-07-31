@@ -17,6 +17,17 @@
   margin-bottom: var(--space-4);
 }
 
+.hero__inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.hero__content {
+  min-width: 0;
+}
+
 .hero__name {
   font-family: var(--font-heading);
   font-weight: 700;
@@ -99,6 +110,23 @@
 .hero__social-link svg {
   width: 18px;
   height: 18px;
+}
+
+/* ---- Hero visual (irregular-shape portrait) ---- */
+.hero__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__blob-img {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 62% 38% 55% 45% / 55% 45% 55% 45%;
+  filter: drop-shadow(0 0 55px var(--color-accent-glow));
 }
 
 /* ---- Projects ---- */
