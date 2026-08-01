@@ -7,6 +7,31 @@
   padding: var(--space-24) 0 var(--space-16);
 }
 
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+.hero__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero__visual {
+  flex-shrink: 0;
+}
+
+.hero__blob-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 0 0 1px var(--color-border-soft), 0 30px 60px -20px var(--color-accent-glow);
+}
+
 .hero__eyebrow {
   font-family: var(--font-heading);
   font-size: 0.9rem;
@@ -17,24 +42,14 @@
   margin-bottom: var(--space-4);
 }
 
-.hero__inner {
-  display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  align-items: center;
-  gap: var(--space-12);
-}
-
-.hero__content {
-  min-width: 0;
-}
-
 .hero__name {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(1.05rem, 6.2vw, 4.2rem);
   line-height: 1.1;
   color: var(--color-text);
   margin-bottom: var(--space-4);
+  white-space: nowrap;
 }
 
 .hero__name .accent {
@@ -80,22 +95,26 @@
 
 .hero__actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: var(--space-4);
   align-items: center;
+  width: 100%;
 }
 
 .hero__socials {
   display: flex;
   gap: var(--space-3);
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 .hero__social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
   border-radius: var(--radius-sm);
   border: 1px solid var(--color-border);
   color: var(--color-text-muted);
@@ -112,21 +131,10 @@
   height: 18px;
 }
 
-/* ---- Hero visual (irregular-shape portrait) ---- */
-.hero__visual {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero__blob-img {
-  width: 100%;
-  max-width: 480px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 62% 38% 55% 45% / 55% 45% 55% 45%;
-  filter: drop-shadow(0 0 55px var(--color-accent-glow));
+.hero__social-link img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1)
 }
 
 /* ---- Projects ---- */
