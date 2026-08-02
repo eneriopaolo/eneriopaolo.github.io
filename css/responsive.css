@@ -35,6 +35,10 @@
   .hero__actions {
     justify-content: center;
   }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---- Mobile ---- */
