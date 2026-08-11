@@ -291,6 +291,39 @@
 }
 
 /* ---- Certificates ---- */
+.certs-header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.certs-drive-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 34px;
+  padding: 0 var(--space-4);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.certs-drive-btn:hover {
+  color: var(--color-accent-bright);
+  border-color: var(--color-accent);
+}
+
+.certs-drive-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 .certs-view-toggle {
   display: flex;
   border: 1px solid var(--color-border);
@@ -398,6 +431,23 @@
   margin-top: var(--space-1);
 }
 
+.cert-card__verify,
+.certs-slideshow__verify {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+  transition: color 0.15s ease;
+}
+
+.cert-card__verify:hover,
+.certs-slideshow__verify:hover {
+  color: var(--color-accent-bright);
+}
+
 .certs-slideshow__nav {
   display: flex;
   align-items: center;
@@ -405,8 +455,8 @@
 }
 
 .certs-slideshow__nav button {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
   background: var(--color-surface-alt);
@@ -422,9 +472,10 @@
   color: var(--color-accent-bright);
 }
 
-.certs-slideshow__nav svg {
-  width: 16px;
-  height: 16px;
+.certs-slideshow__nav img {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
 }
 
 .certs-slideshow__dots {
@@ -443,6 +494,14 @@
 
 .certs-slideshow__dot[aria-current="true"] {
   background: var(--color-accent);
+}
+
+.certs-slideshow__counter {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  color: var(--color-text-dim);
+  min-width: 3.5ch;
+  text-align: center;
 }
 
 .certs-grid {

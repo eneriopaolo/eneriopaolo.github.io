@@ -30,6 +30,7 @@ export function initCertificates() {
     slides: root.querySelectorAll(".certs-slideshow__slide"),
     dots: root.querySelectorAll(".certs-slideshow__dot"),
     caption: root.querySelector(".certs-slideshow__caption"),
+    counter: root.querySelector(".certs-slideshow__counter"),
     prevBtn: root.querySelector('[data-action="prev"]'),
     nextBtn: root.querySelector('[data-action="next"]'),
     slideshowToggle: toggleGroup ? toggleGroup.querySelector('[data-view="slideshow"]') : null,
@@ -45,7 +46,13 @@ export function initCertificates() {
       dot.setAttribute("aria-current", String(i === state.index))
     );
     const current = certificates[state.index];
-    els.caption.innerHTML = `<h3>${current.title}</h3><p>${current.issuer} · ${current.date}</p>`;
+    const verifyLink = current.verifyUrl
+      ? `<p class="certs-slideshow__verify-row"><a class="certs-slideshow__verify" href="${current.verifyUrl}" target="_blank" rel="noopener">Verify →</a></p>`
+      : "";
+    els.caption.innerHTML = `<h3>${current.title}</h3><p>${current.issuer} · ${current.date}</p>${verifyLink}`;
+    if (els.counter) {
+      els.counter.textContent = `${state.index + 1} / ${certificates.length}`;
+    }
   }
 
   function startAutoAdvance() {
@@ -120,6 +127,13 @@ export function initCertificates() {
     });
   });
 
+  // Verify links live inside elements that also carry data-cert-index
+  // (the grid card), so their clicks must not bubble up and trigger
+  // the lightbox as well.
+  root.querySelectorAll(".cert-card__verify, .certs-slideshow__verify").forEach((el) => {
+    el.addEventListener("click", (event) => event.stopPropagation());
+  });
+
   goTo(0);
   els.grid.hidden = true;
   startAutoAdvance();
@@ -148,17 +162,21 @@ function renderMarkup() {
     .join("");
 
   const gridCards = certificates
-    .map(
-      (cert, i) => `
+    .map((cert, i) => {
+      const verifyLink = cert.verifyUrl
+        ? `<a class="cert-card__verify" href="${cert.verifyUrl}" target="_blank" rel="noopener">Verify →</a>`
+        : "";
+      return `
       <div class="cert-card" data-cert-index="${i}">
         <img src="${cert.image}" alt="${cert.title}" loading="lazy" />
         <div class="cert-card__label">
           <h3>${cert.title}</h3>
           <p>${cert.issuer} · ${cert.date}</p>
+          ${verifyLink}
         </div>
       </div>
-    `
-    )
+    `;
+    })
     .join("");
 
   return `
@@ -172,6 +190,7 @@ function renderMarkup() {
           <img src="assets/icons/ui/chevron-left.svg" alt="" width="16" height="16" />
         </button>
         <div class="certs-slideshow__dots">${dots}</div>
+        <span class="certs-slideshow__counter"></span>
         <button data-action="next" aria-label="Next certificate">
           <img src="assets/icons/ui/chevron-right.svg" alt="" width="16" height="16" />
         </button>

@@ -4,41 +4,48 @@ export const certificates = [
     issuer: "CompTIA",
     date: "December 12, 2025",
     image: "assets/certificates/comptia-tech+.svg",
+    verifyUrl: "https://cp.certmetrics.com/CompTIA/en/public/verify/credential/7d6a586891564130a4b4f7e2bcac2e08",
   },
   {
     title: "IBM AI Developer",
     issuer: "IBM",
     date: "July 12, 2026",
     image: "assets/certificates/ibm-ai-developer.svg",
+    verifyUrl: "https://coursera.org/verify/professional-cert/K7VFO6Z7U8Z5",
   },
   {
     title: "IBM Machine Learning",
     issuer: "IBM",
     date: "July 16, 2026",
     image: "assets/certificates/ibm-machine-learning.svg",
+    verifyUrl: "https://coursera.org/verify/professional-cert/8OKRDMR9536B",
   },
   {
     title: "IBM DevOps and Software Engineering",
     issuer: "IBM",
     date: "August 6, 2026",
-    image: "assets/certificates/ibm-devops-and-software-engineering.svg"
+    image: "assets/certificates/ibm-devops-and-software-engineering.svg",
+    verifyUrl: "https://coursera.org/verify/professional-cert/E28TODFO190K",
   },
   {
     title: "Machine Learning",
     issuer: "DeepLearning.AI • Stanford University",
     date: "July 12, 2026",
     image: "assets/certificates/stanford-machine-learning.svg",
+    verifyUrl: "https://coursera.org/verify/specialization/2309I0CJTJ84",
   },
   {
     title: "Google Data Analytics",
     issuer: "Google",
     date: "August 6, 2026",
-    image: "assets/certificates/google-data-analytics.svg"
+    image: "assets/certificates/google-data-analytics.svg",
+    verifyUrl: "https://coursera.org/verify/professional-cert/8UJG5NV5NGCN",
   },
   {
     title: "Employability Skills - JobReady Certificate",
     issuer: "Wadhwani Foundations",
     date: "July 20, 2026",
-    image: "assets/certificates/wadhwani.svg"
+    image: "assets/certificates/wadhwani.svg",
+    verifyUrl: "https://web.certificate.wfglobal.org/en/certificate?certificateId=6a5d8c319ca40b8cfd6544b6",
   },
 ];

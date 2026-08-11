@@ -102,21 +102,35 @@
       <div class="container">
         <div class="section-label">
           <h2 class="section-label__title">Certificates</h2>
-          <div class="certs-view-toggle" id="certs-view-toggle" role="group" aria-label="Certificate view">
-            <button data-view="slideshow" aria-pressed="true" aria-label="Slideshow view">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-                <rect x="3" y="5" width="14" height="14" rx="1.5"/>
-                <path d="M21 8v10a1.5 1.5 0 0 1-1.5 1.5H9"/>
+          <div class="certs-header-actions">
+            <a
+              class="certs-drive-btn"
+              href="https://drive.google.com/drive/folders/1jdCrCS3l4jXprJJLz2Y73ecOnJ-OyqvX?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              title="Open Google Drive folder with all certificates"
+            >
+              View All Certificates
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M7 17 17 7M9 7h8v8" />
               </svg>
-            </button>
-            <button data-view="grid" aria-pressed="false" aria-label="Grid view">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-                <rect x="3" y="3" width="8" height="8" rx="1.5"/>
-                <rect x="13" y="3" width="8" height="8" rx="1.5"/>
-                <rect x="3" y="13" width="8" height="8" rx="1.5"/>
-                <rect x="13" y="13" width="8" height="8" rx="1.5"/>
-              </svg>
-            </button>
+            </a>
+            <div class="certs-view-toggle" id="certs-view-toggle" role="group" aria-label="Certificate view">
+              <button data-view="slideshow" aria-pressed="true" aria-label="Slideshow view" title="Toggle Slideshow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="3" y="5" width="14" height="14" rx="1.5"/>
+                  <path d="M21 8v10a1.5 1.5 0 0 1-1.5 1.5H9"/>
+                </svg>
+              </button>
+              <button data-view="grid" aria-pressed="false" aria-label="Grid view" title="Toggle Grid View">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <rect x="3" y="3" width="8" height="8" rx="1.5"/>
+                  <rect x="13" y="3" width="8" height="8" rx="1.5"/>
+                  <rect x="3" y="13" width="8" height="8" rx="1.5"/>
+                  <rect x="13" y="13" width="8" height="8" rx="1.5"/>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <div id="certificates-root"></div>
