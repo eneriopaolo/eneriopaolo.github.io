@@ -3,42 +3,42 @@ export const certificates = [
     title: "CompTIA Tech+",
     issuer: "CompTIA",
     date: "December 12, 2025",
-    image: "assets/certificates/CompTIA Tech+ certificate.svg",
+    image: "assets/certificates/comptia-tech+.svg",
   },
   {
     title: "IBM AI Developer",
     issuer: "IBM",
     date: "July 12, 2026",
-    image: "assets/certificates/Coursera K7VFO6Z7U8Z5.svg",
+    image: "assets/certificates/ibm-ai-developer.svg",
   },
   {
     title: "IBM Machine Learning",
     issuer: "IBM",
     date: "July 16, 2026",
-    image: "assets/certificates/Coursera 8OKRDMR9536B.svg",
+    image: "assets/certificates/ibm-machine-learning.svg",
+  },
+  {
+    title: "IBM DevOps and Software Engineering",
+    issuer: "IBM",
+    date: "August 6, 2026",
+    image: "assets/certificates/ibm-devops-and-software-engineering.svg"
   },
   {
     title: "Machine Learning",
     issuer: "DeepLearning.AI • Stanford University",
     date: "July 12, 2026",
-    image: "assets/certificates/Coursera 2309I0CJTJ84.svg",
+    image: "assets/certificates/stanford-machine-learning.svg",
   },
   {
-    title: "NAIPDC - Certificate of Attendance",
-    issuer: "Straits Interactive",
-    date: "July 2025",
-    image: "assets/certificates/Enerio_NAIPDC.svg"
+    title: "Google Data Analytics",
+    issuer: "Google",
+    date: "August 6, 2026",
+    image: "assets/certificates/google-data-analytics.svg"
   },
   {
     title: "Employability Skills - JobReady Certificate",
     issuer: "Wadhwani Foundations",
     date: "July 20, 2026",
-    image: "assets/certificates/Enerio_Wadhwani.svg"
-  },
-  {
-    title: "Cybersecurity Awareness - Certificate of Attendance",
-    issuer: "Department of Information and Communications Technology",
-    date: "June 20, 2024",
-    image: "assets/certificates/Enerio_DICT-Cybersecurity-Awareness.svg"
+    image: "assets/certificates/wadhwani.svg"
   },
 ];
