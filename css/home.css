@@ -556,6 +556,7 @@
   color: var(--color-text-muted);
   font-size: 0.8rem;
   margin-top: var(--space-1);
+  margin-bottom: var(--space-4);
 }
 
 /* ---- Lightbox ---- */
