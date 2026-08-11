@@ -226,9 +226,10 @@
 
 /* ---- Skills ---- */
 .skills-grid {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--space-12);
+  row-gap: var(--space-8);
 }
 
 .skill-category__name {
@@ -249,7 +250,7 @@
 
 .skill-tile {
   width: 110px;
-  height: 110px;
+  min-height: 116px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -261,6 +262,13 @@
   border-radius: var(--radius-sm);
   background: var(--color-surface-alt);
   text-align: center;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.skill-tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 26px -10px var(--color-accent-glow);
 }
 
 .skill-tile__icon {
@@ -276,6 +284,10 @@
   line-height: 1.3;
   color: var(--color-text);
   word-break: break-word;
+  min-height: 2.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---- Certificates ---- */
