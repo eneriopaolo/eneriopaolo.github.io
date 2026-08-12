@@ -32,9 +32,7 @@ export function initPracticumSummary() {
     <div class="practicum-summary__text">${paragraphs}</div>
     <a class="btn btn--primary" href="practicum-journey.html">
       View my Practicum Journey
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-        <path d="M5 12h14M13 6l6 6-6 6" />
-      </svg>
+      <img src="assets/icons/ui/link-arrow.svg" alt="" width="16" height="16" />
     </a>
   `;
 }

@@ -187,12 +187,12 @@ function renderMarkup() {
       <div class="certs-slideshow__caption"></div>
       <div class="certs-slideshow__nav">
         <button data-action="prev" aria-label="Previous certificate">
-          <img src="assets/icons/ui/chevron-left.svg" alt="" width="16" height="16" />
+          <img src="assets/icons/ui/slide-prev.svg" alt="" width="16" height="16" />
         </button>
         <div class="certs-slideshow__dots">${dots}</div>
         <span class="certs-slideshow__counter"></span>
         <button data-action="next" aria-label="Next certificate">
-          <img src="assets/icons/ui/chevron-right.svg" alt="" width="16" height="16" />
+          <img src="assets/icons/ui/slide-next.svg" alt="" width="16" height="16" />
         </button>
       </div>
     </div>
@@ -206,8 +206,9 @@ function renderMarkup() {
 function openLightbox(cert) {
   const lightbox = document.getElementById("lightbox");
   if (!lightbox) return;
-  lightbox.querySelector("img").src = cert.image;
-  lightbox.querySelector("img").alt = cert.title;
+  const img = lightbox.querySelector(".lightbox__content img");
+  img.src = cert.image;
+  img.alt = cert.title;
   lightbox.querySelector(".lightbox__caption").textContent = `${cert.title} — ${cert.issuer}, ${cert.date}`;
   lightbox.hidden = false;
   lightbox.classList.add("is-fading-out");

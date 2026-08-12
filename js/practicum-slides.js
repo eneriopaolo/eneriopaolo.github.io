@@ -71,12 +71,12 @@ function renderMarkup() {
     </div>
     <div class="slide-deck__nav">
       <button class="slide-deck__arrow" data-action="prev" aria-label="Previous slide">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        <img src="assets/icons/ui/slide-prev.svg" alt="" width="16" height="16" />
       </button>
       <div class="slide-deck__dots">${dots}</div>
       <span class="slide-deck__counter"></span>
       <button class="slide-deck__arrow" data-action="next" aria-label="Next slide">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        <img src="assets/icons/ui/slide-next.svg" alt="" width="16" height="16" />
       </button>
     </div>
   `;

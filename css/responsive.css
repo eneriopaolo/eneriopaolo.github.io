@@ -126,7 +126,7 @@
     gap: var(--space-1);
   }
 
-  .btn svg {
+  .btn img {
     width: 14px;
     height: 14px;
   }
@@ -144,8 +144,7 @@
     height: 40px;
   }
 
-  .hero__social-link img,
-  .hero__social-link svg {
+  .hero__social-link img {
     width: 16px;
     height: 16px;
   }

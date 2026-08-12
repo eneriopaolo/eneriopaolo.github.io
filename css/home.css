@@ -126,11 +126,6 @@
   border-color: var(--color-accent);
 }
 
-.hero__social-link svg {
-  width: 18px;
-  height: 18px;
-}
-
 .hero__social-link img {
   width: 20px;
   height: 20px;
@@ -318,7 +313,7 @@
   border-color: var(--color-accent);
 }
 
-.certs-drive-btn svg {
+.certs-drive-btn img {
   width: 14px;
   height: 14px;
   flex-shrink: 0;
@@ -353,7 +348,7 @@
   color: var(--color-accent-bright);
 }
 
-.certs-view-toggle svg {
+.certs-view-toggle img {
   width: 16px;
   height: 16px;
 }
@@ -618,7 +613,7 @@
   justify-content: center;
 }
 
-.lightbox__close svg {
+.lightbox__close img {
   width: 18px;
   height: 18px;
 }

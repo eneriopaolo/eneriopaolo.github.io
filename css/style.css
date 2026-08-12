@@ -115,10 +115,6 @@ button {
   cursor: pointer;
 }
 
-svg {
-  display: block;
-}
-
 :focus-visible {
   outline: 2px solid var(--color-accent-bright);
   outline-offset: 2px;
@@ -246,7 +242,7 @@ svg {
   color: var(--color-text);
 }
 
-.nav__toggle svg {
+.nav__toggle img {
   width: 20px;
   height: 20px;
 }
@@ -285,7 +281,7 @@ svg {
   border-color: var(--color-accent-bright);
 }
 
-.btn svg {
+.btn img {
   width: 16px;
   height: 16px;
   flex-shrink: 0;
