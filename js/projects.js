@@ -1,9 +1,13 @@
 /**
  * js/projects.js
  * ------------------------------------------------------------------
- * Renders project cards into #projects-grid from data/projects.js.
- * To add a project, edit the data file only — this renderer needs
- * no changes.
+ * Renders project cards into #projects-grid from
+ * data/projects.data.js. To add a project, edit the data file only —
+ * this renderer needs no changes.
+ *
+ * Usage:
+ *   initProjects({ featuredOnly: true });  // Home page: featured only
+ *   initProjects();                        // Projects page: everything
  * ------------------------------------------------------------------
  */
 import { projects } from "../data/projects.data.js";
@@ -42,11 +46,20 @@ function renderProjectCard(project) {
   `;
 }
 
-export function initProjects() {
+/**
+ * @param {object} [options]
+ * @param {boolean} [options.featuredOnly=false] Only render projects
+ *   whose `featured` flag is true.
+ */
+export function initProjects({ featuredOnly = false } = {}) {
   const grid = document.getElementById("projects-grid");
   if (!grid) return;
 
-  grid.innerHTML = projects.map(renderProjectCard).join("");
+  const list = featuredOnly
+    ? projects.filter((project) => project.featured)
+    : projects;
+
+  grid.innerHTML = list.map(renderProjectCard).join("");
   attachLazyFade(grid);
 }
 

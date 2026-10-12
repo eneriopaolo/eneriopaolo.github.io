@@ -7,6 +7,7 @@ export const projects = [
     image: "assets/projects/ITAMS.jpg",
     repoUrl: null,
     demoUrl: null,
+    featured: true,
   },
   {
     name: "STELLAR",
@@ -16,6 +17,7 @@ export const projects = [
     image: "assets/projects/STELLAR.jpg",
     repoUrl: null,
     demoUrl: null,
+    featured: true,
   },
   {
     name: "JumpStart",
@@ -25,5 +27,6 @@ export const projects = [
     image: "assets/projects/JumpStart.jpg",
     repoUrl: "https://github.com/eneriopaolo/JumpStart",
     demoUrl: null,
+    featured: true,
   },
 ];

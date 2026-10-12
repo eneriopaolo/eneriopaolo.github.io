@@ -16,7 +16,7 @@ import { initScrollReveal } from "./scroll-reveal.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
-  initProjects();
+  initProjects({ featuredOnly: true });
   initSkills();
   initCertificates();
   initScrollReveal();

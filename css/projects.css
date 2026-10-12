@@ -1,0 +1,14 @@
+/* ==========================================================================
+   projects.css — shared by the Projects page and the Home page's
+   "View all projects" link. Card styles themselves live in home.css.
+   ========================================================================== */
+
+.projects-page-section {
+  padding: var(--space-16) 0 var(--space-24);
+}
+
+.projects-more {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-8);
+}
