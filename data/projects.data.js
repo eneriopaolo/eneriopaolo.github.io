@@ -29,4 +29,14 @@ export const projects = [
     demoUrl: null,
     featured: true,
   },
+    {
+    name: "Cryptita Builder Card",
+    description:
+      "Workshop Project (2026): A deliverable from the 'Cryptita Plays: Builder Workshop' conducted at Mapúa Malayan Colleges Laguna on October 9, 2026. A read-only React site paired with a Sui Move BuilderCard package.",
+    tech: ["Sui Move", "TypeScript", "React", "Vite", "GraphQL"],
+    image: "assets/projects/CryptitaBuilderCard.png",
+    repoUrl: null,
+    demoUrl: "https://cryptitaworkshop-builderworkshop202.vercel.app",
+    featured: false,
+  },
 ];
